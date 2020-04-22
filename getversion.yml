@@ -1,6 +1,3 @@
 - hosts: all
   tasks:
-    - script: /scripts/getversion.sh
-      register: out
-
-    - debug: var=out.stdout_lines
+    - command: "cat /data/viewpackage" 
