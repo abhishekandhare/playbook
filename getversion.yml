@@ -3,4 +3,5 @@
     - name: Collect only facts returned by facter
       setup:
       register: out
-      debug: var=output.stdout_lines
+      
+    - debug: var=output.stdout_lines
