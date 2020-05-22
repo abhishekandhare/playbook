@@ -1,6 +1,3 @@
 - hosts: all
   tasks:
     - setup
-      register: out
-
-    - debug: var=out.stdout_lines
