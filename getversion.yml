@@ -1,6 +1,6 @@
 - hosts: all
   tasks:
-    - script: get_version_script.sh
+    - setup
       register: out
 
     - debug: var=out.stdout_lines
